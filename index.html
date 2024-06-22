@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Barang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sistem Informasi Barang</h1>
+    <div id="form-container">
+        <h2>Tambah/Edit Barang</h2>
+        <form id="item-form">
+            <input type="hidden" id="item-id">
+            <label for="store-name">Nama Toko:</label>
+            <input type="text" id="store-name" required>
+            <label for="item-name">Nama Barang:</label>
+            <input type="text" id="item-name" required>
+            <label for="item-price">Harga Barang:</label>
+            <input type="number" id="item-price" required>
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
+    <div id="search-container">
+        <h2>Cari Barang</h2>
+        <input type="text" id="search" placeholder="Cari berdasarkan nama barang atau toko">
+    </div>
+    <div id="item-list-container">
+        <h2>Daftar Barang</h2>
+        <table id="item-list-table">
+            <thead>
+                <tr>
+                    <th>Nama Toko</th>
+                    <th>Nama Barang</th>
+                    <th>Harga Barang</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="item-list"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
